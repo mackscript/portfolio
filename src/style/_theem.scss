@@ -4,3 +4,8 @@ $lightMode: red;
 $fontColor: red;
 $fontBoldColor: red;
 $fontlightColor: red;
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../assets/fonts/tomnr.ttf') format('truetype');
+}

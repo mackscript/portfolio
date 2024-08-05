@@ -1,7 +1,7 @@
 main {
   height: 100vh;
   width: 100vw;
-  background-color: #191819;
+  background-color: #272727;
   overflow: hidden;
 
   .loading {
@@ -16,25 +16,30 @@ main {
       position: absolute;
       left: 0;
       background-color: rgba(185, 185, 185, 0.575);
-      height: 2px;
+      height: 1px;
       transition: 0.4s ease-out;
     }
     .progress_two {
       position: absolute;
-      background-color: #f8f8f8;
-      height: 2px;
+      background-color: #f10707;
+      height: 1px;
       width: 0;
       left: 0;
       z-index: 2;
+      box-shadow: 2px 2px 22px 2px red;
+      border-radius: 6px;
     }
+
     #count {
       position: absolute;
       font-size: 130px;
-      font-family: 'Cormorant Garamond';
-      color: rgba(255, 255, 255, 0.94);
+      font-family: 'CustomFont', sans-serif;
+      color: red;
       // opacity: 0;
       transform: translateY(-15px);
+
       font-weight: lighter;
+      text-shadow: 2px 2px 22px rgba(255, 0, 0, 0.7);
     }
   }
 }

@@ -11,7 +11,7 @@ const Landing = ({ showContent }) => {
           ? setCounter(counter + 1)
           : (clearInterval(count), setCounter(100), reveal());
       });
-    }, 25);
+    }, 1000);
   }, []);
 
   const reveal = () => {
@@ -31,9 +31,10 @@ const Landing = ({ showContent }) => {
       .to(
         '.progress_two',
         1.2,
-        { height: '100%', ease: Expo.easeInOut },
-        '-=0.5'
+        { width: '100%', ease: Expo.easeInOut },
+        '-=2.1'
       )
+      .to('.progress_two', 1.2, { w: 0, ease: Expo.easeInOut }, '-=1.1')
       .to('.loading', 1, { y: '-100%', ease: Expo.easeInOut }, '-=0.2')
       .to('main', 1, { y: '-100%', ease: Power3.easeInOut }, '-=0.4')
       .to('main', 0.1, { display: 'none' });
