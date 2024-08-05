@@ -1,0 +1,27 @@
+//import css files
+@import './loading';
+@import './device';
+@import './theem';
+
+// index css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+}
+
+// common css
+.darkMode {
+  background: $darkMode;
+}
+.darkmode_color {
+  color: $fontColor;
+}
+
+.conainer_app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
