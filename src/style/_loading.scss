@@ -3,11 +3,16 @@ main {
   width: 100vw;
   background-color: #272727;
   overflow: hidden;
-
+  position: relative;
   .loading {
+    position: absolute;
+    z-index: 22;
+    top: 0;
     height: 100vh;
     width: 100vw;
     background-color: #191819;
+    // background-color: red;
+
     display: flex;
     justify-content: center;
     align-items: center;

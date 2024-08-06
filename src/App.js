@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='conainer_app'>
       <Landing showContent={() => showContent()} />
-      {display ? <>aappp</> : null}
+      {display ? <h1>Mack parker</h1> : null}
     </div>
   );
 }
